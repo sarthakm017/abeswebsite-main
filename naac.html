@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABES Engineering College</title>
+    <link rel="icon" href="./assets/logo.ico" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/naac.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="naac-image-container">
+      <div class="naac-image-content">
+        <img class="background-img" src="./assets/2.jpg" alt="Image" />
+        <h1>National Assessment and Accreditation Council (NAAC)</h1>
+        <a href="http://naac.gov.in/">
+          <img class="naac-logo" src="/assets/NAAC_LOGO.png" alt="logo" />
+        </a>
+      </div>
+      <div class="naac-description">
+        <p>
+          The National Assessment and Accreditation Council (NAAC) is an
+          autonomous Government body funded by the University Grants Commission
+          (UGC) that assesses and accredits Higher Education Institutions in
+          India. The NAAC conducts assessment and accreditation to derive an
+          understanding of the ‘Quality Status’ of the institution. NAAC
+          evaluates the institutions for its conformance to the standards of
+          quality in terms of its performance related to the educational
+          processes and outcomes, curriculum coverage, teaching-learning
+          processes, faculty, research, infrastructure, learning resources,
+          organization, governance, financial well being and student services.
+        </p>
+        <div class="naac-details">
+          <p>
+            ABESEC is accredited by NAAC since May 2016. The college has a well
+            established Internal Quality Assurance Cell (IQAC) which ensures the
+            internalization of quality culture and institutionalization of best
+            practices.
+          </p>
+        </div>
+      </div>
+
+      <div id="navbar-container-naac"></div>
+      <div id="naac-footer"></div>
+    </div>
+  </body>
+  <script>
+    $(function () {
+      $("#navbar-container-naac").load("navbar.html");
+      $("#naac-footer").load("footer.html");
+    });
+  </script>
+</html>

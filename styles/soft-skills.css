@@ -1,0 +1,399 @@
+@font-face {
+  font-family: "Canela Web";
+  src: url("/font/Canela-Regular-Web.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Canela Deck Web";
+  src: url("/font/CanelaDeck-Regular-Web.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT America Bold";
+  src: url("/font/GT-America-Standard-Bold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT America Medium";
+  src: url("/font/GT-America-Standard-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT America Regular";
+  src: url("/font/GT-America-Standard-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Albertus Medium";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/font/Albertus-Medium.ttf") format("truetype");
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: rgb(243, 244, 244);
+}
+.heading {
+  cursor: pointer;
+}
+.soft-skill-image-container {
+  height: 50vh;
+  position: relative;
+}
+.soft-skill-image-content {
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+.soft-skill-image-content::before {
+  content: "";
+  /* background: hsla(0, 0%, 5%, 0.6); */
+
+  background: linear-gradient(180deg, hsla(0, 0%, 5%, 0.4) 29.9%, #0e0e0e);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.soft-skill-image-content .background-img {
+  width: 100%;
+  height: auto;
+}
+.soft-skill-image-content h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-family: "Albertus Medium";
+  letter-spacing: 0.1px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 52px;
+  /*max-width: 1400px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    font-family: "Albertus Medium";
+    font-size: 56px;
+    line-height: 1;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    padding-bottom: 0;
+    text-align: start; */
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+.links-heading {
+  display: flex;
+  flex-direction: column;
+  min-width: 14rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+.links-heading div {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 20px 28px 20px 26px;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Albertus Medium";
+  font-size: 1.02rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+}
+.links-heading .quick-links {
+  color: #992728;
+  border-bottom: 0;
+  font-family: "GT America Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  padding: 10px 28px 10px 26px;
+  align-items: center;
+}
+.links-heading .overview {
+  /* display: flex; */
+  /* border-bottom: 1px solid #000; */
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 20px 28px 20px 26px;
+    align-items: center;
+    font-family: Albertus Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.25); */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 20px 28px 20px 26px;
+  align-items: center;
+  /* color: rgba(0, 0, 0, 0.25); */
+  font-family: "Albertus Medium";
+  font-size: 1.02rem;
+  /* font-size: 16px; */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+.emp-portal,
+.student-portal {
+  position: relative;
+}
+
+.icon img {
+  position: absolute;
+  top: 24%;
+  right: 2%;
+  height: 35px;
+}
+.soft-skills-nav{
+    color: #545454;
+text-align: justify;
+font-family: "GT America Regular";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+}
+.soft-skills-nav span{
+    color: #992728;
+}
+.padding {
+  padding: 20px 100px;
+}
+.overview-description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+.overview-description h2{
+    color: #000;
+    font-family: "Albertus Medium";
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+.overview-description p {
+  margin-top: 0;
+  line-height: 26px;
+  font-family: "GT America Regular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: justify;
+  color: #000;
+  line-height: 26px;
+}
+.margin-bottom {
+  margin-bottom: 4px;
+}
+.soft-skill-description{
+    margin-top: 1rem;
+    line-height: 26px;
+}
+.soft-skill-headings{
+    color: #992728;
+font-family: "Albertus Medium";
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 400;
+padding: 16px 0;
+line-height: 150%; /* 3rem */
+}
+.placement-prep-text{
+    color: #000;
+text-align: justify;
+font-family: "GT America Regular";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+}
+
+.overview-description ul {
+  margin-top: 0;
+  list-style: none;
+}
+.overview-description ul li {
+  line-height: 26px;
+  font-family: "GT America Regular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: justify;
+  color: #000;
+  line-height: 26px;
+}
+.overview-description ul li:before {
+  content: "•";
+  font-size: 20pt;
+}
+
+.seep-team {
+  display: none;
+  width: 100%;
+}
+.seep-team h2{
+    
+        color: #000;
+        font-family: "Albertus Medium";
+        font-size: 2.6rem;
+        font-style: normal;
+        font-weight: 400;
+        margin: 2rem 0;
+    
+}
+.emp-commitee-description table {
+  border-collapse: collapse;
+
+  width: 100%;
+}
+.emp-commitee-description .table-header {
+  background-color: #000;
+}
+
+.emp-commitee-description th {
+  background-color: #000;
+  color: #fff;
+  font-family: "GT America Regular";
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  padding: 12px 80px 12px 24px;
+  text-align: start;
+  line-height: 24px;
+}
+.emp-commitee-description .row-border-bottom {
+  border-bottom: 1px solid #3c3c3c;
+}
+.emp-commitee-description td {
+  padding: 15px 24px;
+  color: #000;
+  font-family: "Albertus Medium";
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: start;
+}
+.emp-portal-description {
+  display: none;
+}
+.student-commitee-description {
+  display: none;
+  width: 100%;
+}
+.student-commitee-description table {
+  border-collapse: collapse;
+
+  width: 100%;
+}
+.student-commitee-description .table-header {
+  background-color: #000;
+}
+
+.student-commitee-description th {
+  background-color: #000;
+  color: #fff;
+  font-family: "GT America Regular";
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  padding: 12px 80px 12px 24px;
+  text-align: start;
+  line-height: 24px;
+}
+.student-commitee-description .row-border-bottom {
+  border-bottom: 1px solid #3c3c3c;
+}
+.student-commitee-description td {
+  padding: 15px 24px;
+  color: #000;
+  font-family: "Albertus Medium";
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: start;
+}
+.student-portal-description {
+  display: none;
+}
+.grc-process-description {
+  /* display: flex; */
+  flex-direction: column;
+  margin-bottom: 10px;
+  display: none;
+}
+.grc-process-description .points {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  padding: 18px 34px;
+  align-self: stretch;
+  border-bottom: 1px solid #3c3c3c;
+}
+.grc-process-description .points .number {
+  display: flex;
+  min-width: 40px;
+  height: max-content;
+  padding: 4px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #373737;
+  background: #373737;
+  color: #fff;
+  text-align: center;
+  font-family: "GT America Regular";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 40px; */
+}
+
+.grc-process-description .points .explanation {
+  color: #000;
+  font-family: "GT America Regular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.hide-section {
+  display: none;
+}
+.selected-section {
+  color: #fff !important;
+  background: #000;
+  border-bottom: 1px solid #000;
+}
+
+.soft-skill-divider {
+  margin-top: 0.5rem;
+  border: 2px solid #000 !important;
+  width: 100%;
+}

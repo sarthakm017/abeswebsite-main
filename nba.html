@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABES Engineering College</title>
+    <link rel="icon" href="./assets/logo.ico" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/nba.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="nba-image-container">
+      <div class="nba-image-content">
+        <img class="background-img" src="./assets/2.jpg" alt="Image" />
+        <h1>National Board of Accreditation (NBA)</h1>
+        <a href="https://www.nbaind.org/Home">
+          <img
+            class="nba-logo"
+            src="/assets/National_Board_of_Accreditation.svg.png"
+            alt="logo"
+          />
+        </a>
+      </div>
+      <div class="nba-description">
+        <p>
+          National Board of Accreditation (NBA) is an autonomous accrediting
+          body in India, which deals with the accreditation of engineering and
+          various technical institutions based on the quality of education being
+          offered. NBA represents India in the Washington Accord (WA) which is
+          an international agreement between bodies responsible for accrediting
+          engineering degree programmes. The NBA accredited institutions
+          signifies adherence to high standards of academic quality and
+          infrastructure ensuring outcome based education.
+        </p>
+        <div class="nba-details">
+          <p>Currently ABESEC has its four departments accredited by NBA:</p>
+          <ul>
+            <li>
+              B.Tech in Electronics & Communication Engineering - Accredited for
+              Academic year 2022-23 to 2024-25 i.e. till 30.06.2025
+            </li>
+            <li>
+              B.Tech in Electronics & Communication Engineering - Accredited for
+              Academic year 2022-23 to 2024-25 i.e. till 30.06.2025
+            </li>
+            <li>
+              B.Tech in Electrical & Electronics Engineering - Accredited for
+              Academic year 2017 -18 to 2023 – 24 i.e. till 30.06.2024
+            </li>
+            <li>
+              B.Tech in Information Technology - Accredited for Academic year
+              2017 -18 to 2023 – 24 i.e. till 30.06.2024
+            </li>
+            <li>
+              B.Tech in Mechanical Engineering - Accredited for Academic year
+              2022-23 to 2024-25 i.e. till 30.06.2025
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="navbar-container-nba"></div>
+      <div id="nba-footer"></div>
+    </div>
+  </body>
+  <script>
+    $(function () {
+      $("#navbar-container-nba").load("navbar.html");
+      $("#nba-footer").load("footer.html");
+    });
+  </script>
+</html>

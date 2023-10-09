@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABES Engineering College</title>
+    <link rel="icon" href="./assets/logo.ico" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/iso.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="iso-image-container">
+      <div class="iso-image-content">
+        <img class="background-img" src="./assets/2.jpg" alt="Image" />
+        <h1>International Organization for Standardization (ISO)</h1>
+        <a href="https://www.iso.org/home.html">
+          <img class="iso-logo" src="/assets/isologo.png" alt="logo" />
+        </a>
+      </div>
+      <div class="iso-description">
+        <p>
+          The International Organization for Standardization (ISO) is an
+          independent, non-governmental organization, the members of which are
+          the standard organizations of the 165 member countries. ISO is the
+          World’s best-known quality management standard for companies and
+          organizations of any size. Among various standards of ISO, ISO
+          9001:2015 specifies requirements for a quality management system for
+          organizations having the ability to consistently provide products and
+          services that meet customer and applicable statutory and regulatory
+          requirements. It aims to enhance customer satisfaction through the
+          effective application of the system, including processes for
+          improvement of the system and the assurance of conformity to customer
+          and applicable statutory and regulatory requirements.
+        </p>
+        <div class="iso-details">
+          <p>
+            ABESEC holds ISO 9001:2015 certification, by TUV Rheinland, for
+            providing Quality education services in its B.Tech., M.Tech, MCA and
+            MBA programs.
+          </p>
+          <img src="/assets/image_2023_09_11T10_19_32_070Z.png" alt="logo">
+        </div>
+      </div>
+
+      <div id="navbar-container-iso"></div>
+      <div id="iso-footer"></div>
+    </div>
+  </body>
+  <script>
+    $(function () {
+      $("#navbar-container-iso").load("navbar.html");
+      $("#iso-footer").load("footer.html");
+    });
+  </script>
+</html>

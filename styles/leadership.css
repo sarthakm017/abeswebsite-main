@@ -1,0 +1,520 @@
+@font-face {
+  font-family: "Canela Web";
+  src: url("/font/Canela-Regular-Web.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Canela Deck Web";
+  src: url("/font/CanelaDeck-Regular-Web.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT America Bold";
+  src: url("/font/GT-America-Standard-Bold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT America Medium";
+  src: url("/font/GT-America-Standard-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT America Regular";
+  src: url("/font/GT-America-Standard-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CoreIcons";
+  src: url("/font/core-icons.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Albertus Medium";
+  font-style: normal;
+  font-weight: 400;
+  src: url('/font/Albertus-Medium.ttf') format('truetype');
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: rgb(243, 244, 244);
+}
+
+.leadership-image-container {
+  height: 94vh;
+  position: relative;
+}
+
+.leadership-image-content {
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.leadership-image-content::before {
+  content: "";
+  background: hsla(0, 0%, 5%, 0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.leadership-image-content img {
+  width: 100%;
+  height: 94vh;
+}
+
+.leadership-image-content h1 {
+  position: absolute;
+  top: 38%;
+  left: 24%;
+  max-width: 500px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  font-family: "Albertus Medium";
+  font-size: 84px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  padding-bottom: 0;
+  text-align: start;
+}
+
+.leadership-details-container {
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid rgb(186, 197, 198);
+  display: flex;
+  align-items: center;
+  padding: 0 72px;
+  background-color: rgb(243, 244, 244);
+}
+
+.leadership-details-container ul {
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  gap: 2.5rem;
+}
+
+.leadership-details-container ul li a {
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+.leadership-details-container ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-family: "GT America Medium";
+  font-size: 16px;
+  white-space: nowrap;
+  cursor: pointer;
+  color: #1e1e1e;
+  padding: 8px 0;
+}
+
+.leadership-details-container ul li:first-child::after {
+  align-items: center;
+  background-color: #e3e5e5;
+  border-radius: 50%;
+  color: #1e1e1e;
+  content: "\e908";
+  display: flex;
+  font-family: "CoreIcons";
+  font-size: 12px;
+  font-weight: bolder;
+  height: 20px;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+  width: 20px;
+}
+
+.leadership-details-container ul li:nth-child(2)::after {
+  align-items: center;
+  background-color: #e3e5e5;
+  border-radius: 50%;
+  color: #1e1e1e;
+  content: "\e908";
+  display: flex;
+  font-family: "CoreIcons";
+  font-size: 12px;
+  font-weight: bolder;
+  height: 20px;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+  width: 20px;
+}
+
+.leadership-details-container ul li:nth-child(-n + 2):hover span {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
+}
+
+.leadership-details-container ul li:nth-child(n + 3):hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
+}
+
+.leadership-details-container ul li:nth-child(n + 4) {
+  font-family: "GT America Regular";
+}
+
+.leadership-details-container ul li:hover::after {
+  opacity: 1;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.leadership-president {
+  display: flex;
+  padding: 64px 72px;
+  margin-left: 12px;
+}
+
+.leadership-president-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 24px;
+  width: 676px;
+  /* border: 1px solid red; */
+}
+
+/* .president-content-container h2 {
+  font-family: "Canela Deck Web";
+  font-size: 48px;
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  margin: 0;
+} */
+
+.president-content-container .leadership-president-quote .quote-svg {
+  position: relative;
+}
+.leadership-president-quote span {
+  /* font-family: "Canela Deck Web"; */
+  font-family: "Albertus Medium";
+  font-size: 40px;
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+}
+.president-content-container .leadership-president-quote .quote-svg img {
+  position: absolute;
+  height: 76px;
+  left: -30px;
+  top: -48px;
+  width: 100px;
+}
+
+.president-message {
+  /* font-family: "GT America Regular";
+  font-size: 18px;
+  line-height: 1.5;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  color: #1e1e1e;
+  margin-bottom: 25px;
+  text-rendering: optimizeLegibility; */
+
+  font-size: 18px;
+  line-height: 1.5;
+  font-style: normal;
+  letter-spacing: -0.1px;
+  display: block;
+  font-family: "GT America Bold";
+  font-weight: 700;
+  /* margin-top: 20px; */
+  margin-bottom: 0;
+  /* border: 1px solid red; */
+}
+.leadership-president-text{
+  font-size: 18px;
+  line-height: 1.5;
+  font-style: normal;
+  letter-spacing: -.1px;
+  font-family: "GT America Regular";
+  font-weight: 400;
+  margin-top: 0;
+  /* border: 1px solid black; */
+}
+
+.president-college-logo-container {
+  width: 300px;
+  height: 46px;
+  margin-bottom: 25px;
+}
+.leadership-divider {
+  margin-left: 84px;
+  margin-right: 94px;
+  border-color: rgb(216, 216, 216);
+}
+
+.vice-president-college-logo-container {
+  width: 300px;
+  height: 42px;
+  margin-bottom: 25px;
+}
+
+.director-college-logo-container {
+  width: 300px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.director-college-logo-container .college_1 {
+  width: 125px;
+  height: 46px;
+}
+
+.director-college-logo-container .college_2 {
+  width: 125px;
+  height: 46px;
+}
+
+.deputy-director-college-logo-container {
+  width: 80px;
+  height: 75px;
+  margin-bottom: 25px;
+}
+
+.leadership-president-image {
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 560px;
+  /* border: 1px solid red; */
+}
+
+.president-link-item a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.president-link-item a span {
+  font-family: "GT America Medium";
+  font-size: 18px;
+  line-height: 1.5;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  color: #1e1e1e;
+}
+
+.president-link-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.president-link-item span {
+  font-family: "GT America Medium";
+  font-size: 18px;
+  line-height: 1.5;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  color: #1e1e1e;
+}
+
+.president-arrow-container {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(101, 111, 119);
+}
+
+.president-link-item a:hover .president-arrow-container {
+  background-color: #1e1e1e;
+}
+
+.leadership-president div img {
+  width: 100%;
+  height: 100%;
+}
+
+.leadership-vice-president {
+  display: flex;
+  padding: 64px 72px;
+  margin-left: 12px;
+}
+
+.leadership-vice-president-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-left: 24px;
+  margin-right: 24px;
+  width: 676px;
+}
+
+.vice-president-content-container h2 {
+  /* font-family: "Canela Deck Web"; */
+  font-family: "Albertus Medium";
+  font-size: 48px;
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  margin: 0;
+}
+
+.vice-president-message {
+  font-family: "GT America Regular";
+  font-size: 18px;
+  line-height: 1.5;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  color: #1e1e1e;
+  margin-bottom: 30px;
+}
+
+.leadership-vice-president-image {
+  padding-right: 24px;
+  width: 676px;
+}
+
+.vice-president-link-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.vice-president-link-item span {
+  font-family: "GT America Medium";
+  font-size: 18px;
+  line-height: 1.5;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  color: #1e1e1e;
+}
+
+.vice-president-arrow-container {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(101, 111, 119);
+}
+
+.vice-president-link-item:hover .vice-president-arrow-container {
+  background-color: #1e1e1e;
+}
+
+.leadership-vice-president div img {
+  width: 100%;
+  height: 100%;
+}
+
+.leadership-bog {
+  display: flex;
+  flex-direction: column;
+  padding: 64px 72px;
+  margin: 0 12px;
+}
+
+.leadership-bog h2 {
+  /* font-family: "Canela Deck Web"; */
+  font-family: "Albertus Medium";
+  font-size: 48px;
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  margin: 0;
+}
+
+.leadership-bog .divider {
+  border: 3px solid #1e1e1e;
+  width: 100%;
+  margin-right: 24px;
+  margin-bottom: 32px;
+}
+
+.leadership-bog-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.leadership-bog-items p {
+  font-family: "GT America Regular";
+  font-size: 18px;
+  line-height: 1.5;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  color: #1e1e1e;
+}
+
+.leadership-bog-items p strong {
+  font-family: "GT America Bold";
+}
+
+.leadership-bog-items p:nth-child(even) {
+  padding-left: 24px;
+}
+
+/* .vertical-line {
+  position: absolute;
+  background-color: #bac5c6;
+  width: 1px;
+  min-height: 570px;
+  top: 0;
+  left: 49%;
+  transform: translateX(-50%);
+  transition: height 0.5s;
+  z-index: 0;
+} */

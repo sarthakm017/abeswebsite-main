@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABES Engineering College</title>
+    <link rel="icon" href="./assets/logo.ico" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/ariia.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="ariia-image-container">
+      <div class="ariia-image-content">
+        <img class="background-img" src="./assets/2.jpg" alt="Image" />
+        <h1>Atal Ranking of Institutions on Innovation Achievements (ARIIA)</h1>
+        <a href="https://www.ariia.gov.in/">
+          <img class="ariia-logo" src="/assets/ariia_logo.png" alt="logo" />
+        </a>
+      </div>
+      <div class="ariia-description">
+        <p>
+          Atal Ranking of Institutions on Innovation Achievements (ARIIA) is an
+          initiative of Ministry of Education (MoE), Govt. of India to
+          systematically rank all major higher educational institutions and
+          universities in India on indicators related to “Innovation and
+          Entrepreneurship Development” amongst students and faculties. ARIIA
+          ranking inspires the Indian institutions to reorient their mind-set
+          and build ecosystems to encourage high quality research, innovation
+          and entrepreneurship. ARIIA has focus on quality of innovations and it
+          measures the real impact created by these innovations nationally and
+          internationally.
+        </p>
+        <div class="ariia-details">
+          <p>
+            ABESEC is Categorized as Band ‘C’ institution (rank between 51-75)
+            in the category of private or self-financed colleges/Institutes in
+            Atal Ranking of Institutions on Innovation Ranking (ARIIA-2020)
+            announced on 18th August, 2020.
+          </p>
+        </div>
+      </div>
+
+      <div id="navbar-container-ariia"></div>
+      <div id="ariia-footer"></div>
+    </div>
+  </body>
+  <script>
+    $(function () {
+      $("#navbar-container-ariia").load("navbar.html");
+      $("#ariia-footer").load("footer.html");
+    });
+  </script>
+</html>

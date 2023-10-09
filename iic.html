@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABES Engineering College</title>
+    <link rel="icon" href="./assets/logo.ico" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/iic.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="iic-image-container">
+      <div class="iic-image-content">
+        <img class="background-img" src="./assets/2.jpg" alt="Image" />
+        <h1>Institution’s Innovation Council (IICs)</h1>
+        <a href="https://iic.mic.gov.in/">
+          <img class="iic-logo" src="/assets/iic_logo.png" alt="logo" />
+        </a>
+        <a href="https://mic.gov.in/">
+          <img class="mhrd-logo" src="/assets/mhrd_logo.jpg" alt="logo" />
+        </a>
+        <a href="https://www.aicte-india.org/">
+          <img class="aicte-logo" src="/assets/aicte_logo.png" alt="logo" />
+        </a>
+      </div>
+      <div class="iic-description">
+        <p>
+          ‘MHRD’s Innovation Cell (MIC) has been established by the Ministry of
+          Human Resource Development (MHRD), Govt. of India, to systematically
+          foster the culture of Innovation among all Higher Education
+          Institutions (HEIs). MIC is formed to encourage, inspire and nurture
+          young students by supporting them to work with new ideas and transform
+          them into prototypes while they are in formative years.
+        </p>
+        <p>
+          MIC has envisioned encouraging creation of ‘Institution’s Innovation
+          Council (IIC) across selected HEIs to promote innovation in the
+          Institution through multitudinous modes leading to an innovation
+          promotion eco-system.
+        </p>
+        <div class="iic-details">
+          <p>
+            ABESEC holds 4.5 star rating certificate by Innovation Cell,
+            Ministry of Education, Govt. of India to promote Innovation and
+            Start-up in campus during the IIC calendar year 2019-20.
+          </p>
+        </div>
+        <hr class="iic-divider" />
+        <div class="iic-ranking-container">
+          <p>ABESEC Star Rating for the IIC Calendar year 2019-20</p>
+          <p>4.5</p>
+        </div>
+        <hr class="iic-ranking-divider" />
+        <div class="iic-ranking-container">
+          <p>ABESEC Star Rating for the IIC Calendar year 2018-19</p>
+          <p>3</p>
+        </div>
+        <hr class="iic-ranking-divider" />
+        <div class="iic-ranking-container">
+          <p>ABESEC Star Rating for the IIC Calendar year 2017-18</p>
+          <p>1</p>
+        </div>
+        <hr class="iic-ranking-divider" />
+      </div>
+
+      <div id="navbar-container-iic"></div>
+      <div id="iic-footer"></div>
+    </div>
+  </body>
+  <script>
+    $(function () {
+      $("#navbar-container-iic").load("navbar.html");
+      $("#iic-footer").load("footer.html");
+    });
+  </script>
+</html>
