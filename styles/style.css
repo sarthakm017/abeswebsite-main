@@ -2137,4 +2137,10 @@ video {
   .testimonials-content div img {
     height: 500px;
   }
+  .campus-content {
+    padding-right: 20px;
+  }
+  .campus-container {
+    margin-top: 0px;
+  }
 }
