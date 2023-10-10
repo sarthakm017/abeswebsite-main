@@ -2092,14 +2092,14 @@ video {
     flex-direction: column;
     flex: 0 0 100%;
   }
-  .testimonials-content-description {
+  /* .testimonials-content-description {
     top: 25px;
     white-space: nowrap;
     width: 50px;
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 10px;
-  }
+  } */
   .testimonials-content-description .name {
     font-size: 10px;
     border-bottom: none;
@@ -2108,7 +2108,33 @@ video {
     display: flex;
     flex-direction: column;
   }
-  /* .chevron-icons {
-    display: none;
-  } */
+  .campus-container {
+    padding-left: 0px;
+  }
+  .consultancy-projects-container {
+    flex-direction: column;
+    margin-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .recognition-section {
+    margin-left: 20px;
+  }
+  .nation-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .nation-header-container p {
+    margin-top: 10px;
+  }
+  .consultancy-projects-content p {
+    width: auto;
+  }
+  .testimonials-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .testimonials-content div img {
+    height: 500px;
+  }
 }
